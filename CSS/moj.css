@@ -1,0 +1,76 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #080808;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+}
+
+.cards {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	margin: 20px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	align-items: center;
+	box-shadow: 2px 2px 2px black;
+	overflow: hidden;
+}
+
+.cat {
+	background-image: url(../IMG/cat.jpg);
+}
+
+.dog {
+	background-image: url(../IMG/dog.jpg);
+}
+
+.text {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, .85);
+	height: 100vh;
+	color: white;
+	clip-path: circle(0% at 50% 20%);
+	transition: clip-path .1s;
+}
+
+button:hover~.text {
+	clip-path: circle(100% at 50% 20%);
+}
+
+p {
+    margin-top: 10px;
+}
+
+h1 {
+	color: #ffd300;
+}
+
+h2 {
+    text-decoration:underline;
+}
+
+button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: none;
+	border: none;
+	font-size: 28px;
+	cursor: crosshair;
+	z-index: 10;
+}
